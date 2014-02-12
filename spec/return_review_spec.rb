@@ -5,17 +5,17 @@ describe "Puzzle Exercises" do
   describe "Puzzle #1" do
 
     def get_wash_color(fruit)
-      fruit
+      fruit['washington']
     end
 
     it "returns a color for 'washington'" do
       apples = { 'washington' => 'red' }
       # TODO: Uncomment and complete
-      # result = get_wash_color(???)???
+      result = get_wash_color(apples)
       expect(result).to eq 'red'
 
       apples = { 'washington' => 'not orange' }
-      result = get_washington_color(apples)
+      result = get_wash_color(apples)
       expect(result).to eq 'not orange'
     end
 
@@ -24,9 +24,9 @@ describe "Puzzle Exercises" do
   describe "Puzzle #2" do
 
     # TODO: Uncomment and complete this method
-    # def get_fruit_color(???)
-    #   ???
-    # end
+    def get_fruit_color(apples, kind)
+			apples[kind]
+    end
 
     it "returns the correct color for a specified fruit" do
       apples = {
