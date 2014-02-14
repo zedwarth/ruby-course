@@ -15,6 +15,7 @@ describe "Puzzle Exercises" do
       expect(result).to eq 'red'
 
       apples = { 'washington' => 'not orange' }
+      # TODO: Uncomment and complete
       result = get_wash_color(apples)
       expect(result).to eq 'not orange'
     end
@@ -79,7 +80,7 @@ describe "Puzzle Exercises" do
       array = ['cap', 'box']
       array.each do |item|
         puts item
-      end.push('footrest, sea otter')
+      end.push('footrest', 'sea otter')
     end
 
     it "outputs 'sea otter'" do
@@ -120,7 +121,7 @@ describe "Puzzle Exercises" do
     it "compares" do
       # TODO: Uncomment and complete
       # message = ???
-      expect( compare(2,3) ).to eq(message)
+      expect( check(2,3) ).to eq(message)
       # TODO: Uncomment and complete
       # result = compare(???)
       expect(result).to eq "Yep, these inputs evalute to true"
