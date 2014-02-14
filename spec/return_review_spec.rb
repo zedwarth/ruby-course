@@ -89,7 +89,7 @@ describe "Puzzle Exercises" do
     end
   end
 
-  describe "Puzzle #6", :pending => true do
+  describe "Puzzle #6" do
     def puzzle_5(x)
       if x == true # TODO: Change this ONE LINE
         "It's true!"
