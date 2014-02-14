@@ -41,7 +41,7 @@ describe "Puzzle Exercises" do
 
   end
 
-  describe "Puzzle #3", :pending => true do
+  describe "Puzzle #3" do
     class ArtMuseum
       def initialize
         @collection  = ['The Last Supper', 'Mona Lisa']
@@ -51,16 +51,16 @@ describe "Puzzle Exercises" do
       end
     end
 
-    @museum = ArtMuseum.new
 
     it "counts correctly" do
-      # TODO:
-      # result = @museum.???
+			@museum = ArtMuseum.new
+
+      result = @museum.collection.count
       expect(result).to eq(2)
     end
   end
 
-  describe "Puzzle #4", :pending => true do
+  describe "Puzzle #4" do
     def greet(x)
       if x
         'Hello'
@@ -69,7 +69,7 @@ describe "Puzzle Exercises" do
 
     it "greets correctly" do
       # TODO: Uncomment and complete
-      # result = greet(???)
+      result = greet("Hello").concat("World")
       expect(result).to eq 'Hello there, World'
     end
   end
