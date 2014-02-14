@@ -91,7 +91,7 @@ describe "Puzzle Exercises" do
 
   describe "Puzzle #6" do
     def puzzle_5(x)
-      if x == true # TODO: Change this ONE LINE
+			unless x then nil else # TODO: Change this ONE LINE
         "It's true!"
       end
     end
